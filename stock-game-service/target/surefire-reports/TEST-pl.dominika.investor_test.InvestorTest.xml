@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pl.dominika.investor_test.InvestorTest" time="0.014" tests="3" errors="3" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin"/>
+    <property name="java.vm.version" value="24.45-b08"/>
+    <property name="user.country.format" value="DE"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\dpurszke\Desktop\workspace\stock-game"/>
+    <property name="java.runtime.version" value="1.7.0_45-b18"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\dpurszke\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\dpurszke\Desktop\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6314711907433378354.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\apache-maven-3.3.9\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\dpurszke\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Program Files\nodejs\;C:\Users\dpurszke\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\dpurszke"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="DPURSZKE"/>
+    <property name="java.class.path" value="/C:/Users/dpurszke/Desktop/eclipse/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_45\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="user.language.format" value="de"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_45"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_45\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\dpurszke\Desktop\workspace\stock-game\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testShouldReturnValueOfAllResources" classname="pl.dominika.investor_test.InvestorTest" time="0.007">
+    <error message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:635)
+	at java.util.ArrayList.get(ArrayList.java:411)
+	at pl.dominika.service.impl.CSVReaderImpl.convertArray2Objects(CSVReaderImpl.java:62)
+	at pl.dominika.service.impl.CSVReaderImpl.readCSV(CSVReaderImpl.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy40.readCSV(Unknown Source)
+	at pl.dominika.investor_test.InvestorTest.testShouldReturnValueOfAllResources(InvestorTest.java:38)
+</error>
+    <system-out><![CDATA[17:18:25.464 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@542ebbbd testClass = CalendarTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21984b4a testClass = CalendarTest, locations = '{classpath:/spring/test-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], dirtiesContext [false].
+17:18:25.465 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class pl.dominika.investor_test.InvestorTest].
+17:18:25.465 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+17:18:25.466 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@721bac32 declaringClass = 'pl.dominika.investor_test.InvestorTest', classes = '{}', locations = '{../../../spring/test-context.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+17:18:25.466 [main] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [pl.dominika.investor_test.InvestorTest]
+17:18:25.467 [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [pl.dominika.investor_test.InvestorTest]: using defaults.
+17:18:25.468 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:18:25.469 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+17:18:25.469 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2f3546ae, org.springframework.test.context.support.DirtiesContextTestExecutionListener@52b361b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7ed4a172, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@39b3846b]
+17:18:25.469 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.dominika.investor_test.InvestorTest]
+17:18:25.469 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.dominika.investor_test.InvestorTest]
+17:18:25.470 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.dominika.investor_test.InvestorTest]
+17:18:25.470 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.dominika.investor_test.InvestorTest]
+17:18:25.471 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.dominika.investor_test.InvestorTest]
+17:18:25.472 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.dominika.investor_test.InvestorTest]
+17:18:25.472 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@38baaa65 testClass = InvestorTest, testInstance = pl.dominika.investor_test.InvestorTest@6708e9fb, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@7a399295 testClass = InvestorTest, locations = '{classpath:/spring/test-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+17:18:25.472 [main] DEBUG o.s.t.c.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@7a399295 testClass = InvestorTest, locations = '{classpath:/spring/test-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+17:18:25.472 [main] DEBUG o.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [ContextCache@4df16ea1 size = 1, hitCount = 1, missCount = 1, parentContextCount = 0]
+17:18:25.476 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'pl.dominika.investor_test.InvestorTest': AutowiredFieldElement for private pl.dominika.investor.Investor pl.dominika.investor_test.InvestorTest.investor
+17:18:25.478 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'investor'
+17:18:25.478 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'pl.dominika.investor_test.InvestorTest' to bean named 'investor'
+17:18:25.478 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'pl.dominika.investor_test.InvestorTest': AutowiredFieldElement for private pl.dominika.service.impl.CSVReader pl.dominika.investor_test.InvestorTest.csvReader
+17:18:25.478 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'stockBroker'
+17:18:25.478 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'pl.dominika.investor_test.InvestorTest' to bean named 'stockBroker'
+17:18:25.479 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:18:25.482 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.482 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [pl.dominika.service.impl.CSVReaderImpl.readCSV]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+17:18:25.482 [main] DEBUG org.hibernate.impl.SessionImpl - opened session at timestamp: 14492459054
+17:18:25.482 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.482 [main] DEBUG o.h.transaction.JDBCTransaction - begin
+17:18:25.482 [main] DEBUG org.hibernate.jdbc.ConnectionManager - opening JDBC connection
+17:18:25.483 [main] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:dataSource]
+17:18:25.483 [main] DEBUG o.h.transaction.JDBCTransaction - current autocommit status: true
+17:18:25.483 [main] DEBUG o.h.transaction.JDBCTransaction - disabling autocommit
+17:18:25.483 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5db8ffe4]
+17:18:25.484 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.484 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.484 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.484 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.484 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.485 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.485 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 6
+17:18:25.485 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.485 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.485 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.486 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.487 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 15
+17:18:25.487 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+KGHM
+17:18:25.487 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.487 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.487 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.489 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.489 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.489 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.490 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 7
+17:18:25.490 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.490 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.490 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.490 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.491 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 16
+17:18:25.491 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PGNIG
+17:18:25.492 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.492 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.492 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.493 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.493 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.493 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.493 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 8
+17:18:25.493 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.494 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.494 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.494 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.495 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 17
+17:18:25.495 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+JSW
+17:18:25.495 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.495 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.495 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.496 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.496 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.496 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.496 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 9
+17:18:25.496 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.497 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.497 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.497 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.498 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 18
+17:18:25.498 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+TPSA
+17:18:25.499 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.499 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.499 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.499 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.500 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.500 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.501 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 10
+17:18:25.501 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.501 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.501 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.501 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.502 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 19
+17:18:25.503 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PKOBP
+17:18:25.503 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.503 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.503 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.504 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.504 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.504 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.505 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 20
+17:18:25.506 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+KGHM
+17:18:25.506 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.506 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.506 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.507 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.507 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.507 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.508 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 21
+17:18:25.509 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PGNIG
+17:18:25.509 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.509 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.509 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.510 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.510 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.510 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.511 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 22
+17:18:25.512 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+JSW
+17:18:25.512 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.512 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.512 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.513 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.513 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.514 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.515 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 23
+17:18:25.515 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+TPSA
+17:18:25.515 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.516 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.516 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.516 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.516 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.517 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.518 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 24
+17:18:25.518 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PKOBP
+17:18:25.519 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.519 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.519 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.519 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.519 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.520 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.521 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 25
+17:18:25.521 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+KGHM
+17:18:25.521 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.522 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.522 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.522 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.522 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.523 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.524 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 26
+17:18:25.524 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PGNIG
+17:18:25.525 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.525 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.525 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.525 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.525 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.526 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.527 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 27
+17:18:25.527 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+JSW
+17:18:25.528 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.528 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] for JPA transaction
+17:18:25.528 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.528 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.529 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.529 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.530 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 28
+17:18:25.530 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+TPSA
+17:18:25.531 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction rollback
+17:18:25.531 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Rolling back JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99]
+17:18:25.531 [main] DEBUG o.h.transaction.JDBCTransaction - rollback
+17:18:25.532 [main] DEBUG o.h.transaction.JDBCTransaction - re-enabling autocommit
+17:18:25.532 [main] DEBUG o.h.transaction.JDBCTransaction - rolled back JDBC Connection
+17:18:25.532 [main] DEBUG org.hibernate.jdbc.ConnectionManager - aggressively releasing JDBC connection
+17:18:25.532 [main] DEBUG org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+17:18:25.532 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@4e26ed99] after transaction
+17:18:25.532 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+17:18:25.533 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@38baaa65 testClass = InvestorTest, testInstance = pl.dominika.investor_test.InvestorTest@6708e9fb, testMethod = testShouldReturnValueOfAllResources@InvestorTest, testException = java.lang.IndexOutOfBoundsException: Index: 1, Size: 1, mergedContextConfiguration = [MergedContextConfiguration@7a399295 testClass = InvestorTest, locations = '{classpath:/spring/test-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+]]></system-out>
+  </testcase>
+  <testcase name="testShouldBuyRandomShares" classname="pl.dominika.investor_test.InvestorTest" time="0.004">
+    <error message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:635)
+	at java.util.ArrayList.get(ArrayList.java:411)
+	at pl.dominika.service.impl.CSVReaderImpl.convertArray2Objects(CSVReaderImpl.java:62)
+	at pl.dominika.service.impl.CSVReaderImpl.readCSV(CSVReaderImpl.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy40.readCSV(Unknown Source)
+	at pl.dominika.investor_test.InvestorTest.testShouldBuyRandomShares(InvestorTest.java:54)
+</error>
+    <system-out><![CDATA[17:18:25.534 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.dominika.investor_test.InvestorTest]
+17:18:25.535 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.dominika.investor_test.InvestorTest]
+17:18:25.535 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@38baaa65 testClass = InvestorTest, testInstance = pl.dominika.investor_test.InvestorTest@38ec574c, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@7a399295 testClass = InvestorTest, locations = '{classpath:/spring/test-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+17:18:25.535 [main] DEBUG o.s.t.c.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@7a399295 testClass = InvestorTest, locations = '{classpath:/spring/test-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+17:18:25.536 [main] DEBUG o.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [ContextCache@4df16ea1 size = 1, hitCount = 2, missCount = 1, parentContextCount = 0]
+17:18:25.536 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'pl.dominika.investor_test.InvestorTest': AutowiredFieldElement for private pl.dominika.investor.Investor pl.dominika.investor_test.InvestorTest.investor
+17:18:25.536 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'investor'
+17:18:25.536 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'pl.dominika.investor_test.InvestorTest': AutowiredFieldElement for private pl.dominika.service.impl.CSVReader pl.dominika.investor_test.InvestorTest.csvReader
+17:18:25.536 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'stockBroker'
+17:18:25.537 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.537 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [pl.dominika.service.impl.CSVReaderImpl.readCSV]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+17:18:25.537 [main] DEBUG org.hibernate.impl.SessionImpl - opened session at timestamp: 14492459055
+17:18:25.537 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.537 [main] DEBUG o.h.transaction.JDBCTransaction - begin
+17:18:25.537 [main] DEBUG org.hibernate.jdbc.ConnectionManager - opening JDBC connection
+17:18:25.537 [main] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:dataSource]
+17:18:25.537 [main] DEBUG o.h.transaction.JDBCTransaction - current autocommit status: true
+17:18:25.538 [main] DEBUG o.h.transaction.JDBCTransaction - disabling autocommit
+17:18:25.538 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@634a36cd]
+17:18:25.539 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.539 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.539 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.539 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.539 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.539 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.540 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 11
+17:18:25.540 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.540 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.540 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.540 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.541 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 29
+17:18:25.541 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+KGHM
+17:18:25.542 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.542 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.542 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.542 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.542 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.542 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.543 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 12
+17:18:25.543 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.543 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.543 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.543 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.545 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 30
+17:18:25.545 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PGNIG
+17:18:25.545 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.546 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.546 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.546 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.546 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.546 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.547 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 13
+17:18:25.547 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.547 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.547 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.547 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.548 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 31
+17:18:25.548 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+JSW
+17:18:25.548 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.548 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.548 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.549 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.554 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.554 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.555 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 14
+17:18:25.555 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.555 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.555 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.555 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.569 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 32
+17:18:25.569 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+TPSA
+17:18:25.570 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.570 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.570 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.570 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.570 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.570 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.571 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 15
+17:18:25.571 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.571 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.571 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.571 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.572 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 33
+17:18:25.572 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PKOBP
+17:18:25.573 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.573 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.573 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.573 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.573 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.573 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.574 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 34
+17:18:25.574 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+KGHM
+17:18:25.575 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.575 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.575 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.575 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.575 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.575 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.576 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 35
+17:18:25.576 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PGNIG
+17:18:25.576 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.577 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.577 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.577 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.577 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.577 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.578 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 36
+17:18:25.578 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+JSW
+17:18:25.578 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.579 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.579 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.579 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.579 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.579 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.580 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 37
+17:18:25.580 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+TPSA
+17:18:25.580 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.580 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.580 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.581 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.581 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.581 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.582 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 38
+17:18:25.582 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PKOBP
+17:18:25.582 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.583 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.583 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.583 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.583 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.583 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.585 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 39
+17:18:25.585 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+KGHM
+17:18:25.585 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.585 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.585 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.586 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.586 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.586 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.587 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 40
+17:18:25.587 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PGNIG
+17:18:25.587 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.588 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.588 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.588 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.588 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.588 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.589 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 41
+17:18:25.589 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+JSW
+17:18:25.589 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.589 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] for JPA transaction
+17:18:25.590 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.590 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.590 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.590 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.590 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 42
+17:18:25.590 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+TPSA
+17:18:25.591 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction rollback
+17:18:25.591 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Rolling back JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6]
+17:18:25.591 [main] DEBUG o.h.transaction.JDBCTransaction - rollback
+17:18:25.591 [main] DEBUG o.h.transaction.JDBCTransaction - re-enabling autocommit
+17:18:25.591 [main] DEBUG o.h.transaction.JDBCTransaction - rolled back JDBC Connection
+17:18:25.591 [main] DEBUG org.hibernate.jdbc.ConnectionManager - aggressively releasing JDBC connection
+17:18:25.591 [main] DEBUG org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+17:18:25.591 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@24575bc6] after transaction
+17:18:25.592 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+17:18:25.592 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@38baaa65 testClass = InvestorTest, testInstance = pl.dominika.investor_test.InvestorTest@38ec574c, testMethod = testShouldBuyRandomShares@InvestorTest, testException = java.lang.IndexOutOfBoundsException: Index: 1, Size: 1, mergedContextConfiguration = [MergedContextConfiguration@7a399295 testClass = InvestorTest, locations = '{classpath:/spring/test-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+]]></system-out>
+  </testcase>
+  <testcase name="testShouldSellShares" classname="pl.dominika.investor_test.InvestorTest" time="0.003">
+    <error message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:635)
+	at java.util.ArrayList.get(ArrayList.java:411)
+	at pl.dominika.service.impl.CSVReaderImpl.convertArray2Objects(CSVReaderImpl.java:62)
+	at pl.dominika.service.impl.CSVReaderImpl.readCSV(CSVReaderImpl.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy40.readCSV(Unknown Source)
+	at pl.dominika.investor_test.InvestorTest.testShouldSellShares(InvestorTest.java:71)
+</error>
+    <system-out><![CDATA[17:18:25.593 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.dominika.investor_test.InvestorTest]
+17:18:25.593 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.dominika.investor_test.InvestorTest]
+17:18:25.593 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@38baaa65 testClass = InvestorTest, testInstance = pl.dominika.investor_test.InvestorTest@125372e7, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@7a399295 testClass = InvestorTest, locations = '{classpath:/spring/test-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+17:18:25.593 [main] DEBUG o.s.t.c.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@7a399295 testClass = InvestorTest, locations = '{classpath:/spring/test-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+17:18:25.593 [main] DEBUG o.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [ContextCache@4df16ea1 size = 1, hitCount = 3, missCount = 1, parentContextCount = 0]
+17:18:25.593 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'pl.dominika.investor_test.InvestorTest': AutowiredFieldElement for private pl.dominika.investor.Investor pl.dominika.investor_test.InvestorTest.investor
+17:18:25.593 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'investor'
+17:18:25.593 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'pl.dominika.investor_test.InvestorTest': AutowiredFieldElement for private pl.dominika.service.impl.CSVReader pl.dominika.investor_test.InvestorTest.csvReader
+17:18:25.593 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'stockBroker'
+17:18:25.594 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.594 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [pl.dominika.service.impl.CSVReaderImpl.readCSV]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+17:18:25.594 [main] DEBUG org.hibernate.impl.SessionImpl - opened session at timestamp: 14492459055
+17:18:25.594 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.594 [main] DEBUG o.h.transaction.JDBCTransaction - begin
+17:18:25.594 [main] DEBUG org.hibernate.jdbc.ConnectionManager - opening JDBC connection
+17:18:25.594 [main] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:dataSource]
+17:18:25.595 [main] DEBUG o.h.transaction.JDBCTransaction - current autocommit status: true
+17:18:25.595 [main] DEBUG o.h.transaction.JDBCTransaction - disabling autocommit
+17:18:25.595 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@281a9bc8]
+17:18:25.595 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.595 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.595 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.596 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.596 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.596 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.597 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 16
+17:18:25.597 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.597 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.597 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.597 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.598 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 43
+17:18:25.598 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+KGHM
+17:18:25.599 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.599 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.599 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.599 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.600 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.600 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.600 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 17
+17:18:25.600 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.600 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.601 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.601 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.601 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 44
+17:18:25.601 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PGNIG
+17:18:25.602 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.602 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.602 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.602 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.602 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.602 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.603 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 18
+17:18:25.603 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.603 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.603 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.603 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.603 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 45
+17:18:25.603 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+JSW
+17:18:25.604 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.604 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.604 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.604 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.604 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.604 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.604 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 19
+17:18:25.604 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.604 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.604 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.605 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.605 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 46
+17:18:25.605 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+TPSA
+17:18:25.605 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.605 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.605 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.605 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.605 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.606 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+Hibernate: 
+    insert 
+    into
+        company
+        (id, name) 
+    values
+        (default, ?)
+17:18:25.606 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 20
+17:18:25.606 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:18:25.606 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.606 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.606 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.607 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 47
+17:18:25.607 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PKOBP
+17:18:25.607 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.607 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.607 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.607 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.607 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.607 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.608 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 48
+17:18:25.608 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+KGHM
+17:18:25.609 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.609 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.609 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.609 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.609 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.609 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.610 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 49
+17:18:25.610 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PGNIG
+17:18:25.610 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.610 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.610 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.611 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.611 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.611 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.611 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 50
+17:18:25.611 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+JSW
+17:18:25.612 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.612 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.612 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.612 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.612 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.612 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.612 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 51
+17:18:25.613 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+TPSA
+17:18:25.613 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.613 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.613 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.613 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.613 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.613 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.614 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 52
+17:18:25.614 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PKOBP
+17:18:25.614 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.614 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.614 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.614 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.614 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.614 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.615 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 53
+17:18:25.615 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+KGHM
+17:18:25.615 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.615 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.615 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.615 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.616 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.616 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.616 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 54
+17:18:25.616 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+PGNIG
+17:18:25.617 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.617 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.617 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.617 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.617 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.617 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.618 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 55
+17:18:25.618 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+JSW
+17:18:25.618 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+17:18:25.618 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] for JPA transaction
+17:18:25.618 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Participating in existing transaction
+17:18:25.618 [main] DEBUG o.h.e.def.AbstractSaveEventListener - executing identity-insert immediately
+17:18:25.618 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:18:25.618 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        data_price
+        (id, company_id, date, price) 
+    values
+        (default, ?, ?, ?)
+17:18:25.619 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 56
+17:18:25.619 [main] DEBUG org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+TPSA
+17:18:25.619 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction rollback
+17:18:25.619 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Rolling back JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517]
+17:18:25.619 [main] DEBUG o.h.transaction.JDBCTransaction - rollback
+17:18:25.620 [main] DEBUG o.h.transaction.JDBCTransaction - re-enabling autocommit
+17:18:25.620 [main] DEBUG o.h.transaction.JDBCTransaction - rolled back JDBC Connection
+17:18:25.620 [main] DEBUG org.hibernate.jdbc.ConnectionManager - aggressively releasing JDBC connection
+17:18:25.620 [main] DEBUG org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+17:18:25.620 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@249ca517] after transaction
+17:18:25.620 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+17:18:25.621 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@38baaa65 testClass = InvestorTest, testInstance = pl.dominika.investor_test.InvestorTest@125372e7, testMethod = testShouldSellShares@InvestorTest, testException = java.lang.IndexOutOfBoundsException: Index: 1, Size: 1, mergedContextConfiguration = [MergedContextConfiguration@7a399295 testClass = InvestorTest, locations = '{classpath:/spring/test-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+]]></system-out>
+  </testcase>
+</testsuite>
